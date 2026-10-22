@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071a17">
+<title>ETHIO WORK — የሥራ እድል</title>
+<style>
+:root{--bg:#071a17;--panel:#102823;--green:#19c37d;--gold:#f4c95d;--text:#f4f8f6;--muted:#afc4bc}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#071a17,#0c2922 65%,#081714);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Ethiopic",Arial,sans-serif;line-height:1.55}
+header{padding:22px 18px 28px;border-bottom:1px solid #23463c;background:#061410}nav{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:950px;margin:auto}.brand{font-weight:900;font-size:22px;letter-spacing:.5px}.brand span{color:var(--green)}.pill{font-size:12px;color:var(--gold);border:1px solid #6a5b2b;padding:5px 9px;border-radius:99px}
+main{max-width:950px;margin:auto;padding:24px 16px 48px}.hero{padding:12px 0 22px}.eyebrow{color:var(--green);font-weight:800;font-size:13px;letter-spacing:1px}.hero h1{font-size:clamp(30px,8vw,52px);line-height:1.15;margin:10px 0}.hero h1 span{color:var(--gold)}.hero p{color:var(--muted);max-width:620px}.search{display:flex;gap:8px;flex-wrap:wrap;background:#102823;padding:10px;border:1px solid #2b5145;border-radius:16px;margin:20px 0}.search input,.search select{flex:1;min-width:130px;background:#071a17;border:1px solid #31574b;border-radius:10px;color:white;padding:13px;font-size:15px}.btn{background:var(--green);color:#062018;font-weight:800;border:0;border-radius:10px;padding:13px 17px;font-size:15px;cursor:pointer}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0 30px}.stat{background:#0d241f;border:1px solid #23463c;border-radius:13px;padding:13px}.stat strong{display:block;color:var(--gold);font-size:20px}.stat small{color:var(--muted)}.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:28px 0 14px}.section-title h2{margin:0;font-size:22px}.tag{font-size:12px;color:var(--green);background:#12392b;padding:5px 9px;border-radius:99px}.jobs{display:grid;gap:12px}.job{background:var(--panel);border:1px solid #25483d;border-radius:15px;padding:16px}.jobtop{display:flex;justify-content:space-between;gap:12px}.job h3{margin:0 0 4px;font-size:18px}.company,.meta{color:var(--muted);font-size:14px}.meta{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}.job p{color:#d4e2dc;font-size:14px;margin:8px 0}.badge{font-size:11px;color:var(--gold);border:1px solid #62552c;border-radius:7px;padding:4px 7px;white-space:nowrap;height:max-content}.apply{display:inline-block;color:#062018;background:var(--green);padding:9px 13px;border-radius:9px;text-decoration:none;font-weight:800;font-size:14px}.notice{background:#251f10;border:1px solid #5c4c22;border-radius:13px;padding:14px;color:#f8e6a9;font-size:13px;margin-top:18px}.submit{margin-top:30px;background:#0d241f;border:1px solid #2b5145;border-radius:16px;padding:18px}.submit h2{margin-top:0}.submit p{color:var(--muted);font-size:14px}.submit a{color:var(--green);font-weight:800}footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 12px;border-top:1px solid #23463c}
+@media(min-width:650px){.jobs{grid-template-columns:1fr 1fr}.hero{padding-top:25px}}
+</style>
+</head>
+<body>
+<header><nav><div class="brand">ETHIO <span>WORK</span> 🇪🇹</div><div class="pill">WORK • GROW • SUCCEED</div></nav></header>
+<main>
+<section class="hero">
+<div class="eyebrow">እድልህ ከዚህ ይጀምራል</div>
+<h1>ቀጣዩን ሥራህን<br><span>እዚህ ፈልግ።</span></h1>
+<p>ለኢትዮጵያ ሥራ ፈላጊዎችና ሠራተኛ ለሚፈልጉ ድርጅቶች የተዘጋጀ የሥራ መረጃ መድረክ።</p>
+<div class="search"><input id="q" type="search" placeholder="የሥራ ስም ወይም ድርጅት…"><select id="city"><option value="">ሁሉም ከተሞች</option><option>አዲስ አበባ</option><option>አዳማ</option><option>ሀዋሳ</option><option>ባህር ዳር</option><option>ድሬዳዋ</option></select><button class="btn" onclick="filterJobs()">ፈልግ 🔎</button></div>
+<div class="stats"><div class="stat"><strong>ለሁሉም</strong><small>የሥራ መረጃ</small></div><div class="stat"><strong>በነፃ</strong><small>ሥራ መፈለግ</small></div><div class="stat"><strong>🇪🇹</strong><small>ኢትዮጵያ</small></div></div>
+</section>
+<div class="section-title"><h2>የሥራ ምሳሌዎች</h2><span class="tag">DEMO • ሙከራ</span></div>
+<div class="jobs" id="jobs">
+<article class="job" data-title="customer service ደንበኛ አገልግሎት" data-city="አዲስ አበባ"><div class="jobtop"><div><h3>የደንበኛ አገልግሎት</h3><div class="company">የሥራ ምሳሌ — ድርጅት ስም ይጨመራል</div></div><span class="badge">DEMO</span></div><div class="meta"><span>📍 አዲስ አበባ</span><span>🕒 ሙሉ ጊዜ</span></div><p>ለደንበኞች በጥሩ ሁኔታ መረጃ መስጠትና ጥያቄዎችን መመለስ።</p><a class="apply" href="#apply">የማመልከቻ መረጃ</a></article>
+<article class="job" data-title="junior graphic designer ግራፊክ ዲዛይነር" data-city="አዲስ አበባ"><div class="jobtop"><div><h3>ጀማሪ ግራፊክ ዲዛይነር</h3><div class="company">የሥራ ምሳሌ — ድርጅት ስም ይጨመራል</div></div><span class="badge">DEMO</span></div><div class="meta"><span>📍 አዲስ አበባ</span><span>🎨 ዲዛይን</span></div><p>ፖስተር፣ ማስታወቂያና የሶሻል ሚዲያ ዲዛይኖችን ማዘጋጀት።</p><a class="apply" href="#apply">የማመልከቻ መረጃ</a></article>
+<article class="job" data-title="sales assistant ሽያጭ ረዳት" data-city="አዳማ"><div class="jobtop"><div><h3>የሽያጭ ረዳት</h3><div class="company">የሥራ ምሳሌ — ድርጅት ስም ይጨመራል</div></div><span class="badge">DEMO</span></div><div class="meta"><span>📍 አዳማ</span><span>🕒 ሙሉ ጊዜ</span></div><p>ደንበኞችን መርዳት፣ የምርት መረጃ መስጠትና የሽያጭ ሂደትን መደገፍ።</p><a class="apply" href="#apply">የማመልከቻ መረጃ</a></article>
+<article class="job" data-title="intern data entry የዳታ ማስገቢያ" data-city="ሀዋሳ"><div class="jobtop"><div><h3>የዳታ ማስገቢያ ሰልጣኝ</h3><div class="company">የሥራ ምሳሌ — ድርጅት ስም ይጨመራል</div></div><span class="badge">DEMO</span></div><div class="meta"><span>📍 ሀዋሳ</span><span>💻 መረጃ ማስገቢያ</span></div><p>መረጃዎችን በጥንቃቄ ማስገባትና ሰነዶችን ማደራጀት።</p><a class="apply" href="#apply">የማመልከቻ መረጃ</a></article>
+</div>
+<div class="notice">⚠️ አስፈላጊ፦ ከላይ ያሉት የሥራ ማስታወቂያዎች የድረ-ገጹን አሰራር ለማሳየት የተዘጋጁ ምሳሌዎች ብቻ ናቸው። እውነተኛ ሥራ አይደሉም፤ ማንኛውንም ሥራ ከማመልከትህ በፊት ከአሰሪው አረጋግጥ።</div>
+<section class="submit" id="apply"><h2>🏢 ሥራ ማስታወቂያ ማስገባት ይፈልጋሉ?</h2><p>ይህ የመጀመሪያ ሙከራ ስሪት ነው። ለእውነተኛ ማስታወቂያ ማስገቢያ ቅጽና የአሰሪ ማረጋገጫ ስርዓት በቀጣይ ደረጃ ይጨመራሉ።</p><p>ማስታወቂያ ከማቅረብህ በፊት የድርጅቱን ህጋዊነትና የሥራውን እውነተኛነት ማረጋገጥ አስፈላጊ ነው።</p></section>
+</main>
+<footer>© 2026 ETHIO WORK • ለኢትዮጵያ የሥራ እድል 🇪🇹<br>የመጀመሪያ ሙከራ ስሪት</footer>
+<script>
+function filterJobs(){const q=document.getElementById('q').value.trim().toLowerCase();const city=document.getElementById('city').value;let shown=0;document.querySelectorAll('.job').forEach(j=>{const ok=(j.dataset.title.toLowerCase().includes(q)||j.innerText.toLowerCase().includes(q))&&(!city||j.dataset.city===city);j.style.display=ok?'block':'none';if(ok)shown++});let msg=document.getElementById('noresults');if(!shown){if(!msg){msg=document.createElement('p');msg.id='noresults';msg.textContent='የሚዛመድ ምሳሌ አልተገኘም። ሌላ ቃል ወይም ከተማ ሞክር።';document.getElementById('jobs').after(msg)}}else if(msg)msg.remove()}
+document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')filterJobs()});
+</script>
+</body>
+</html>
